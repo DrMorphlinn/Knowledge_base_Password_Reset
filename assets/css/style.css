@@ -1,0 +1,168 @@
+/* ============================================
+   Knowledge Base Portal - Custom Styles
+   ============================================ */
+
+/* General */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    border-radius: 0 0 50px 50px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.85rem;
+    padding: 0.4em 0.8em;
+}
+
+/* Auth pages */
+.auth-card {
+    max-width: 450px;
+    margin: 60px auto;
+}
+
+.auth-card .card {
+    border-radius: 15px;
+}
+
+/* Lesson cards */
+.lesson-card .card-footer {
+    background: transparent;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Dashboard sidebar */
+.sidebar {
+    background: #2c3e50;
+    min-height: calc(100vh - 60px);
+    color: white;
+}
+
+.sidebar a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: all 0.2s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding-left: 25px;
+}
+
+.sidebar .active {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border-left: 4px solid #3498db;
+}
+
+/* Stat cards */
+.stat-card {
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Video embed responsive */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* PDF embed */
+.pdf-container {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Button spacing */
+.btn-group-actions .btn {
+    margin-right: 5px;
+}
+
+/* Table responsive enhancements */
+.table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+/* Search bar */
+.search-bar {
+    max-width: 500px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section {
+        padding: 40px 0;
+    }
+    .stat-card .stat-number {
+        font-size: 1.5rem;
+    }
+}
+

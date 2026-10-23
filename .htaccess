@@ -1,0 +1,19 @@
+# Knowledge Base Portal - Security & URL Settings
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "\.(sql|md|txt|env)$">
+    Require all denied
+</FilesMatch>
+
+# Protect includes directory
+RedirectMatch 403 ^/knowledge-base/includes/.*$
+RedirectMatch 403 ^/knowledge-base/config/.*$
+
+# PHP settings
+php_value upload_max_filesize 100M
+php_value post_max_size 105M
+php_value max_execution_time 300
+
